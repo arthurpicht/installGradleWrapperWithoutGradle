@@ -2,8 +2,8 @@
 
 ## How to install a gradle wrapper without gradle
 
-***TLDR*** A bash script that installs a gradle wrapper in a java project
-without a running gradle installation. Just copy script *create_gradle_wrapper.sh*
+***TLDR:*** A bash script that installs a gradle wrapper in a java project
+without a running gradle installation. Just copy script `create_gradle_wrapper.sh`
 to the root of your project, make it executable and call it.
 
 The [official gradle documentation](https://docs.gradle.org/current/userguide/gradle_wrapper.html#sec:adding_wrapper) states:
@@ -12,18 +12,18 @@ The [official gradle documentation](https://docs.gradle.org/current/userguide/gr
 
 Well, I think, this is not entirely correct. Here is the solution:
 
-1. Copy the script *create_gradle_wrapper.sh* to the root of your gradle
+1. Copy the script `create_gradle_wrapper.sh` to the root of your gradle
 project and make it executable.
 
 2. If you want your gradle wrapper to be pinned to a specific version,
-declare the *gradle_version* variable in the first line of the script. Leave it commented to
+declare the `gradle_version` variable in the first lines of the script. Leave it commented to
 get the latest version.
 
 3. Call script.
 
-As prerequesites *java* and *wget* must be installed.
+As prerequesites `java` and `wget` must be installed.
 
-And finally you should put the following lines to your *.gitignore* file:
+And finally you should put the following lines to your `.gitignore` file:
 
     gradle/
     gradlew
