@@ -10,7 +10,7 @@ The [official gradle documentation](https://docs.gradle.org/current/userguide/gr
 
 > To make the Wrapper files available to other developers and execution environments you’ll need to check them into version control. All Wrapper files including the JAR file are very small in size. Adding the JAR file to version control is expected. Some organizations do not allow projects to submit binary files to version control. At the moment there are no alternative options to the approach.
 
-Well, I think, this is not entirely correct. Here is the solution:
+Well, I think, the last sentence is not entirely correct. Here is the solution:
 
 1. Copy the script `create_gradle_wrapper.sh` to the root of your gradle
 project and make it executable.
