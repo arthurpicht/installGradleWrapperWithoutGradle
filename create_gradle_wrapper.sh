@@ -2,7 +2,9 @@
 
 ## https://github.com/arthurpicht/installGradleWrapperWithoutGradle
 
-# gradle_version="6.7.1"
+gradle_version="6.7.1"
+
+__dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 if [ -f "${__dir}/gradlew" ]; then
     echo 'Error: gradle wrapper already installed.' >&2
@@ -18,8 +20,6 @@ if ! [ -x "$(command -v java)" ]; then
   echo 'Error: java is not installed.' >&2
   exit 1
 fi
-
-__dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 mkdir -p ${__dir}/gradle/wrapper
 cd ${__dir}/gradle/wrapper
